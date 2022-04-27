@@ -15,8 +15,6 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(Spawn());
     }
 
-
-
     IEnumerator Spawn()
     {
         Instantiate(_enemyPrefab, GetRandomPosition(), Quaternion.identity);

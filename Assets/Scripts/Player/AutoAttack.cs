@@ -8,6 +8,7 @@ public class AutoAttack : MonoBehaviour
     private void Update()
     {
         Collider2D collider = Physics2D.OverlapCircle(transform.position, _radius);
+
         
         if (collider != null && collider.GetComponent<Enemy>() != null)
         {
@@ -15,6 +16,4 @@ public class AutoAttack : MonoBehaviour
             _weapon.Shoot(direction);
         }
     }
-
-
 }
